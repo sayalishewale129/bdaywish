@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background:black;
+}
+.con{
+  position: absolute;
+  align-content: center;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-image:url(back.jpg);
+  color: black;
+  transform: rotateY(180deg);
+  font-style:oblique;
+  font-size:larger;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-content: center;
+  padding: 50px;
+  grid-gap: 30px 90px;
+}
+.grid-item {
+  border-color: black;
+  font-size: 30px;
+  text-align: center;
+}
+    
+    .h2{
+      color: crimson;
+    }
+    
+    .p{
+      font-family: ob;
+    }
+
+    .a{
+      font-size:larger;
+    }
+    </style>
+</head>
+<body>
+
+    <h1 align="center" style="color:white;">Happy Birthday, <span class="redText">NANDAN</span>!!!</h1>
+ <section> 
+<div class="con">
+ <div class="grid-container">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+     <div class="grid-item"><img src="first.JPG"></div> 
+    </div>
+    <div class="flip-box-back">
+      <!-- <h2>Paris</h2> -->
+      <p>A true<br>relationship<br>is two<br> unperfect people<br> refusing<br>to give<br> up on<br> each other.</p>
+    </div>
+  </div>
+</div>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+     <div class="grid-item"><img src="IMG_9161~photo.jpg"></div> 
+    </div>
+    <div class="flip-box-back">
+      <!-- <h2>Paris</h2> -->
+      <p>I can't promise <br>to fix all of<br>your problems,<br>but I can<br>promise you<br>wont't face<br>them all<br>alone. </p>
+    </div>
+  </div>
+</div>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+     <div class="grid-item"><img src="4N7A2187.JPG"></div>  
+    </div>
+    <div class="flip-box-back">
+      <!-- <h2>Paris</h2> -->
+      <p>Nobody is<br>entilted to your<br>TIME.<br>Don't feel<br>guilty for taking<br>time out to <br>better yourself.</p>
+    </div>
+  </div>
+</div>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+     <div class="grid-item"><img src="4N7A2379.JPG "></div>  
+    </div>
+    <div class="flip-box-back">
+      <!-- <h2>Paris</h2> -->
+      <p>You are <br>more powerful<br>than you know;<br>you are<br>handsome<br>just as <br> you are.</p>
+    </div>
+  </div>
+</div>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+     <div class="grid-item"><img src="4E8A3678.JPG"></div> 
+    </div>
+    <div class="flip-box-back">
+      <!-- <h2>Paris</h2> -->
+      <p>The moment you accept<br>responsibilty for<br>everything in your life is<br>the moment you gain the<br>power to change anything<br>in your life.</p>
+    </div>
+  </div>
+</div>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+     <div class="grid-item"><img src="last.JPG" style="width:300px;height:200px"></div> 
+    </div>
+    <div class="flip-box-back">
+      <!-- <h2>Paris</h2> -->
+      <p>Love yourself first <br>and everything else <br>falls into line.<br>You really have<br>to love yourself<br>to get anything done<br>in this world.</p>
+    </div>
+  </div>
+</div>  
+</div>
+</div>
+<canvas id="birthday"></canvas>
+<script src="style.js"></script>
+<a href="video.html">Click here if you like it</a>
+</body>
+</html>
